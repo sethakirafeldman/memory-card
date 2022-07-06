@@ -26,6 +26,7 @@ function App() {
             name = {card.name}
             src = {card.src}
             index = {card.index}
+            local = {card.local}
             key ={`${card.name}${card.index}`}
         />)
     }

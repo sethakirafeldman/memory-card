@@ -3,18 +3,21 @@
     {
         "name":"Mike Wazowski",
         "index": 0,
-        "src": "https://static.wikia.nocookie.net/pixar/images/f/f8/Mike2.png/revision/latest?cb=20210630232000"
+        "src": "https://static.wikia.nocookie.net/pixar/images/f/f8/Mike2.png/revision/latest?cb=20210630232000",
+        "local": "/assets/Mike.png"
     },
 
     {
         "name":"James P. Sullivan",
         "index": 1,
-        "src": "https://static.wikia.nocookie.net/disney/images/3/3c/Profile_-_Sulley.jpg/revision/latest?cb=20200817112818"
+        "src": "https://static.wikia.nocookie.net/disney/images/3/3c/Profile_-_Sulley.jpg/revision/latest?cb=20200817112818",
+        "local": "/assets/Sully.png"
     },
     {
         "name":"Woody",
         "index":2,
-        "src": "https://static.wikia.nocookie.net/disney/images/2/22/Profile_-_Woody.jpeg/revision/latest?cb=20200711052417"
+        "src": "https://static.wikia.nocookie.net/disney/images/2/22/Profile_-_Woody.jpeg/revision/latest?cb=20200711052417",
+        "local": "/assets/Woody.png"
     }
 
     ]
