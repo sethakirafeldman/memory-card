@@ -18,6 +18,34 @@
         "index":2,
         "src": "https://static.wikia.nocookie.net/disney/images/2/22/Profile_-_Woody.jpeg/revision/latest?cb=20200711052417",
         "local": "/assets/Woody.png"
+    },
+
+    {
+        "name":"Elastigirl",
+        "index":3,
+        "src": "https://static.wikia.nocookie.net/disney/images/3/3a/Profile_-_Helen_Parr.jpeg/revision/latest?cb=20200205215542",
+        "local": "/assets/Elastigirl.png"
+    },
+
+    {
+        "name":"Mr. Incredible",
+        "index": 4,
+        "src": "https://static.wikia.nocookie.net/disney/images/d/d2/Profile_-_Bob_Parr.jpeg/revision/latest?cb=20190313155821",
+        "local": "/assets/Incredible.png"
+    },
+
+    {
+        "name":"Hamm",
+        "index": 5,
+        "src": "https://static.wikia.nocookie.net/pixar/images/1/17/Hamm_%28transparent%29.png/revision/latest?cb=20201208152934",
+        "local": "/assets/Hamm.png"
+    },
+    
+    {
+        "name":"Mrs. Potato Head",
+        "index": 6,
+        "src": "https://static.wikia.nocookie.net/disney/images/2/20/Profile_-_Mrs._Potato_Head.jpeg/revision/latest?cb=20190313051049",
+        "local": "/assets/mrspotato.png"
     }
 
     ]
