@@ -46,7 +46,7 @@ const randomizer = () => {
     <>
     <Nav />
     <main id="main-container"> 
-    {useEffect( () => randomizer(), [])}  </main>
+    {useEffect( () => randomizer(), [])}  
 
     {charIndex ? 
     charArr.map((char)=> {
@@ -63,7 +63,7 @@ const randomizer = () => {
     :
     null
     }
-
+    </main>
     </>
  )
 }
