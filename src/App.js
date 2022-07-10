@@ -15,16 +15,16 @@ const [charArr, setCharArr] = useState([]);
 
 
 // create card component to gen each card
-// map cards in random order
 // use state to track whether cards have been clicked
 // scoreboard component that tracks current score (state)
 // and best score (state + localstorage)
 
+
+
+// map cards in random order
 const randomizer = () => {
     // loop should use charIndex array length
     // store random nums in a set of unique values within charIndex state.
-        // charIndex has vals 0-6 in arr
-        // rearrange values
         let temp = charIndex;
         temp.sort( () => Math.random() - 0.5);
         setCharIndex(temp);   
@@ -39,31 +39,37 @@ const randomizer = () => {
             randomChar]
         ));  
     }
+};
 
-}
+const handleClick = (index) => {
+    console.log(index)
+    setCharArr([]);
+    randomizer();
+};
 
  return(
     <>
-    <Nav />
-    <main id="main-container"> 
-    {useEffect( () => randomizer(), [])}  
+        {/* <Nav /> */}
+        <main id="main-container"> 
+            {useEffect( () => randomizer(), [])}  
 
-    {charIndex ? 
-    charArr.map((char)=> {
-        return (
-            <Card 
-            name = {char.name}
-            src = {char.src}
-            index = {char.index}
-            local = {char.local}
-            key ={`${char.name}${char.index}`}
-        />
-        )
-    })
-    :
-    null
-    }
-    </main>
+            {charIndex ? 
+            charArr.map((char)=> {
+                return (
+                    <Card 
+                    name = {char.name}
+                    src = {char.src}
+                    index = {char.index}
+                    local = {char.local}
+                    key ={`${char.name}${char.index}`}
+                    handleClick = {handleClick}
+                />
+                )
+            })
+            :
+            null
+            }
+        </main>
     </>
  )
 }

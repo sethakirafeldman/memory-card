@@ -6,7 +6,9 @@ export default function Card (props) {
 
         <div 
           id= {`char-${props.index}`}
-          className="card-container">
+          className="card-container"
+          onClick={() => {props.handleClick(props.index)}}
+          >
          <h1>{props.name}</h1>
          <img 
             src={window.location.origin + props.local} 
