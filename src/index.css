@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
 }
 
 #main-container {
@@ -21,4 +22,14 @@ body {
   width: 250px;
   height: 250px;
   object-fit: cover;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.game-over {
+  color:red;
 }
