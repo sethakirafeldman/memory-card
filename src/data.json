@@ -46,7 +46,43 @@
         "index": 6,
         "src": "https://static.wikia.nocookie.net/disney/images/2/20/Profile_-_Mrs._Potato_Head.jpeg/revision/latest?cb=20190313051049",
         "local": "/assets/mrspotato.png"
+    },
+
+    {
+        "name":"Anton Ego",
+        "index": 7,
+        "src": "https://disney.fandom.com/wiki/Anton_Ego?file=Profile_-_Anton_Ego.jpg",
+        "local": "/assets/Anton.png"
+    },
+
+    {
+        "name":"Carl Fredricksen",
+        "index": 8,
+        "src": "https://pixar.fandom.com/wiki/Carl_Fredricksen?file=Carl.png",
+        "local": "/assets/Carl.png"
+    },
+
+    {
+        "name":"Mr. Potato Head",
+        "index": 9,
+        "src": "https://disney.fandom.com/wiki/Mr._Potato_Head?file=Profile_-_Mr._Potato_Head.jpeg",
+        "local": "/assets/mrpotato.png"
+    },
+
+    {
+        "name":"Rex",
+        "index": 10,
+        "src": "https://disney.fandom.com/wiki/Mr._Potato_Head?file=Profile_-_Mr._Potato_Head.jpeg",
+        "local": "/assets/Rex.png"
+    },
+
+    {
+        "name":"Edna Mode",
+        "index": 11,
+        "src": "https://pixar.fandom.com/wiki/Edna_Mode?file=EdnaMode.webp",
+        "local": "/assets/Edna.png"
     }
+
 
     ]
 }
