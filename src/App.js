@@ -63,7 +63,6 @@ const handleClick = (index) => {
         // reset clickedChars + score
         setClickedChars([]);
         setGameStatus(false);
-        console.log("Oops, you already clicked that!");
     }
     // reset charArr state to run randomizer        
     setCharArr([]); 
