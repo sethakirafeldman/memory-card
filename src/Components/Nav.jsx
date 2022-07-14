@@ -9,7 +9,7 @@ export default function Nav (props) {
         let tempScore = [highScore]; 
         tempScore.push(props.score);
         //sorts scores from lowest to highest
-        tempScore.sort();
+        tempScore.sort((a,b) => a - b);
         // get highest score in array.
         let highest = tempScore[tempScore.length -1];
         setHighScore(highest);
