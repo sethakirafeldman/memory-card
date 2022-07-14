@@ -15,13 +15,13 @@ const [gameStatus, setGameStatus] = useState(true);
 
 // set index to number of characters
 // issue with render order
-const setIndex = ()=> {
-    let newArr = [];
-    data.characters.forEach((char)=>{
-        newArr.push(char.index);
-    })
-    setCharIndex(newArr);
-};
+// const setIndex = ()=> {
+//     let newArr = [];
+//     data.characters.forEach((char)=>{
+//         newArr.push(char.index);
+//     })
+//     setCharIndex(newArr);
+// };
 
 // useEffect( () => setIndex(), [0]);
 
@@ -78,7 +78,7 @@ const handleClick = (index) => {
             gameStatus = {gameStatus}
         />
         <main id="main-container"> 
-            {useEffect( () => randomizer(),[])}
+            {useEffect( () => randomizer(),[0])}
 
             {charIndex.length > 0 ? 
             charArr.map((char)=> {
