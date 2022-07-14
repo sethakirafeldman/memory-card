@@ -8,6 +8,7 @@ body {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+  margin-top: 200px;
 
 }
 
@@ -25,10 +26,16 @@ body {
 }
 
 nav {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  top:0;
+  position: fixed;
+  text-align: center;
+  width: 100%;
+  border: #004d7a;
+  border-style: solid;
+  margin: auto;
+  color: white;
+  background-color: #051937;
+  margin-bottom: 500px;
 }
 .game-over {
   color:red;
