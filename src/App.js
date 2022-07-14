@@ -69,8 +69,6 @@ const handleClick = (index) => {
     randomizer();
 };
 
-
-
  return(
     <>
         <Nav
