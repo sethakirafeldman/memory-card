@@ -25,13 +25,23 @@ export default function Nav (props) {
 
     <nav>
         <h1>Pixar Memory Game</h1>
+   
+        
+        <h1>Score: {props.score}</h1> 
+        <h1>High Score: {highScore} </h1>
+
         {props.gameStatus ? 
-            <h1>Score: {props.score}</h1> 
+            null
             :
             <h1 className='game-over'>Game over!</h1>
         }
-    
-        <h1>High Score: {highScore} </h1>
+
+        {props.score == props.data.characters.length ? 
+            <h1 className='winner'>Wow, nice memorizing, you got them all!</h1>
+            :
+            null
+        }
+        
  
         </nav>
     )

@@ -4,10 +4,8 @@ import data from "./data.json";
 import React, { useState, useEffect } from 'react';
 
 function App() {
-
+// may be able to replace this with data.characters.length value and create arr in randomizer()
 const [charIndex, setCharIndex] = useState([0,1,2,3,4,5,6,7,8,9,10,11]);
-// const [charIndex, setCharIndex] = useState([]);
-
 const [charArr, setCharArr] = useState([]);
 const [clickedChars, setClickedChars] = useState([]);
 const [gameStatus, setGameStatus] = useState(true);
@@ -17,9 +15,14 @@ const [gameStatus, setGameStatus] = useState(true);
 // issue with render order
 // const setIndex = ()=> {
 //     let newArr = [];
-//     data.characters.forEach((char)=>{
-//         newArr.push(char.index);
-//     })
+//     let i = 0;
+
+//     while (data.characters.length > i){
+//         newArr.push(i);
+//         i++;
+//     }
+//     console.log(newArr);
+
 //     setCharIndex(newArr);
 // };
 
@@ -43,9 +46,6 @@ const randomizer = () => {
         ));  
     }
 };
-
-// useEffect( () => randomizer(), [charIndex])
-
 
 // use state to track whether cards have been clicked
 const handleClick = (index) => {
@@ -72,13 +72,14 @@ const handleClick = (index) => {
  return(
     <>
         <Nav
+            data = {data}
             score = {clickedChars.length}
             gameStatus = {gameStatus}
         />
         <main id="main-container"> 
             {useEffect( () => randomizer(),[0])}
 
-            {charIndex.length > 0 ? 
+            {charIndex.length == data.characters.length ? 
             charArr.map((char)=> {
                 return (
                     <Card 
