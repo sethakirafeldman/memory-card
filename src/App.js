@@ -2,7 +2,7 @@ import Nav from './Components/Nav';
 import Card from './Components/Card';
 import data from "./data.json";
 import React, { useState, useEffect } from 'react';
-import LandingPage from './Components/LandingPage';
+import Instructions from './Components/Instructions';
 
 function App() {
 
@@ -82,7 +82,7 @@ const handleClick = (index) => {
         />
 
         <main id="main-container"> 
-            <LandingPage />
+            <Instructions />
             {charIndex?.length == data.characters.length ? 
             charArr.map((char)=> {
                 return (
