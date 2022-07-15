@@ -37,6 +37,11 @@ nav {
   background-color: #051937;
   margin-bottom: 500px;
 }
+.instructions {
+  text-align: center;
+  width: 100%;
+  padding-bottom: 25px;
+}
 .game-over {
   color:red;
 }

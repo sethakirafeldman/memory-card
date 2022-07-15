@@ -2,10 +2,26 @@ import Nav from './Components/Nav';
 import Card from './Components/Card';
 import data from "./data.json";
 import React, { useState, useEffect } from 'react';
+import LandingPage from './Components/LandingPage';
 
 function App() {
+
+const setIndex = ()=> {
+    let newArr = [];
+    let i = 0;
+    while (data.characters.length > i){
+        newArr.push(i);
+        i++;
+    }
+    console.log(newArr);
+    return newArr;
+};
+
 // may be able to replace this with data.characters.length value and create arr in randomizer()
-const [charIndex, setCharIndex] = useState([0,1,2,3,4,5,6,7,8,9,10,11]);
+const [charIndex, setCharIndex] = useState([0,1,2,3,4,5,6,7,8,9,10,11,12]);
+// const [charIndex, setCharIndex] = useState(() => {
+//     setIndex();
+// })
 const [charArr, setCharArr] = useState([]);
 const [clickedChars, setClickedChars] = useState([]);
 const [gameStatus, setGameStatus] = useState(true);
@@ -13,18 +29,7 @@ const [gameStatus, setGameStatus] = useState(true);
 
 // set index to number of characters
 // issue with render order
-// const setIndex = ()=> {
-//     let newArr = [];
-//     let i = 0;
 
-//     while (data.characters.length > i){
-//         newArr.push(i);
-//         i++;
-//     }
-//     console.log(newArr);
-
-//     setCharIndex(newArr);
-// };
 
 // useEffect( () => setIndex(), [0]);
 
@@ -70,15 +75,17 @@ const handleClick = (index) => {
 };
 
  return(
+    
     <>
         <Nav
             data = {data}
             score = {clickedChars.length}
             gameStatus = {gameStatus}
         />
-        <main id="main-container"> 
-            {useEffect( () => randomizer(),[0])}
 
+        <main id="main-container"> 
+            <LandingPage />
+            {useEffect( () => randomizer(),[0])}
             {charIndex.length == data.characters.length ? 
             charArr.map((char)=> {
                 return (
@@ -94,9 +101,10 @@ const handleClick = (index) => {
             })
             :
             null
-            }
-        </main>
+            }  
+        </main>  
     </>
+
  )
 }
 
