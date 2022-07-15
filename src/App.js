@@ -18,7 +18,7 @@ const setIndex = ()=> {
 };
 
 // may be able to replace this with data.characters.length value and create arr in randomizer()
-const [charIndex, setCharIndex] = useState([0,1,2,3,4,5,6,7,8,9,10,11,12]);
+const [charIndex, setCharIndex] = useState([0,1,2,3,4,5,6,7,8,9,10,11,12,13,14]);
 // const [charIndex, setCharIndex] = useState(() => {
 //     setIndex();
 // })
@@ -83,8 +83,7 @@ const handleClick = (index) => {
 
         <main id="main-container"> 
             <LandingPage />
-            {useEffect( () => randomizer(),[0])}
-            {charIndex.length == data.characters.length ? 
+            {charIndex?.length == data.characters.length ? 
             charArr.map((char)=> {
                 return (
                     <Card 
@@ -100,6 +99,8 @@ const handleClick = (index) => {
             :
             null
             }  
+        {useEffect( () => randomizer(),[0])}
+
         </main>  
     </>
 

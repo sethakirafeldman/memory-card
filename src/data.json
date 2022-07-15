@@ -88,6 +88,20 @@
         "index": 12,
         "src": "https://disney.fandom.com/wiki/Buzz_Lightyear?file=Profile_-_Buzz_Lightyear.jpeg",
         "local": "/assets/Buzz.png"
+    },
+
+    {
+        "name":"Syndrome",
+        "index": 13,
+        "src": "https://disney.fandom.com/wiki/Syndrome?file=Profile_-_Syndrome.png",
+        "local": "/assets/Syndrome.png"
+    },
+
+    {
+        "name":"Merida",
+        "index": 14,
+        "src": "https://disney.fandom.com/wiki/Merida?file=Profile_-_Merida.jpeg",
+        "local": "/assets/Merida.png"
     }
 
 
