@@ -3,7 +3,7 @@
     {
         "name":"Mike Wazowski",
         "index": 0,
-        "src": "https://static.wikia.nocookie.net/pixar/images/f/f8/Mike2.png/revision/latest?cb=20210630232000",
+        "src": "https://disney.fandom.com/wiki/Mike_Wazowski?file=Monsters-inc-disneyscreencaps.com-9782.jpg",
         "local": "/assets/Mike.png"
     },
 
@@ -81,6 +81,13 @@
         "index": 11,
         "src": "https://pixar.fandom.com/wiki/Edna_Mode?file=EdnaMode.webp",
         "local": "/assets/Edna.png"
+    },
+
+    {
+        "name":"Buzz Lightyear",
+        "index": 12,
+        "src": "https://disney.fandom.com/wiki/Buzz_Lightyear?file=Profile_-_Buzz_Lightyear.jpeg",
+        "local": "/assets/Buzz.png"
     }
 
 
