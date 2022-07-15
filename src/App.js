@@ -35,7 +35,6 @@ const [gameStatus, setGameStatus] = useState(true);
 
 // map cards in random order
 const randomizer = () => {
-        // console.log(charIndex)
         // setIndex();
         let temp = charIndex;
         temp.sort( () => Math.random() - 0.5);
@@ -43,7 +42,6 @@ const randomizer = () => {
     //when random nums in array, apply sequentially with loop to character index
     for (let i = 0; i < data.characters.length; i++) {
         let randomChar = data.characters[charIndex[i]];
-        // console.log(randomChar);
         // this creates double the length I want
         setCharArr(prevState => (
             [...prevState,
